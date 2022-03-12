@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/forms/NavBar';
 import Alert from './components/global/Alert';
 import Dashboard from './components/dashboard/Dashboard';
+import ImageProfile  from './components/image/ImageProfile';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <NavBar />
         <Alert />
         <Routes>  
-          <Route exact path='/' element={<Dashboard/>} />   
+          <Route exact path='/' element={<Dashboard/>} /> 
+          <Route exact path='/image/:imageid' element={<ImageProfile/>} />   
         </Routes>
       </>
     </Router>
