@@ -1,4 +1,7 @@
+import React, { useEffect } from 'react';
+import store from './store';
 import './App.scss';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
