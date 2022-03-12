@@ -4,7 +4,6 @@ import images from './images';
 
 
 export default combineReducers({
-    // alert,
-    // images,
-    // redirect,
+    alert,
+    images,
   });
