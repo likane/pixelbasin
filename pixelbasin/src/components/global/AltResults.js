@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Button, Card} from 'react-bootstrap';
+import { Row, Col, Card} from 'react-bootstrap';
 
 const AltResults = () => {
   return (
@@ -7,13 +7,12 @@ const AltResults = () => {
     <Row>
       <Col>
       <Card className="text-center">
-        <Card.Header>Featured</Card.Header>
+        <Card.Header>Ooops...</Card.Header>
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
+          <Card.Title>It appears something went wrong</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
+            Please try searching again or come back later.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
       </Col>

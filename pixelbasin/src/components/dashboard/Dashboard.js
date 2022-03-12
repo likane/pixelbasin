@@ -14,7 +14,7 @@ const Dashboard = ({search_images, images: {loading, image_list}}) => {
 
     let imageList = (
         <>
-        {!image_list || image_list.length == 0 ? <AltResults /> : (
+        {!image_list || image_list.length === 0 ? <AltResults /> : (
             <div className="d-flex align-content-start justify-content-center flex-wrap gap-2">
                 {image_list.map(image => (
                      <a className='text-decoration-none d-flex align-items-stretch' key={image.id} href={`/image/${image.id}`}><Image src={image.previewURL} thumbnail fluid rounded alt="..." ></Image></a>

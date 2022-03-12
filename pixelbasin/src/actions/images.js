@@ -4,8 +4,6 @@ import axios from 'axios';
 import {
     SEARCH_IMAGES,
     SEARCH_FAIL,
-    GET_IMAGE_BY_ID,
-    GET_IMAGE_OWNER,
   } from './types';
 
 let DEBUG = process.env.REACT_APP_DEBUG
@@ -14,7 +12,6 @@ let apikey = process.env.REACT_APP_PXKEY
 export const search_images = (values) => async dispatch => {
     let res;
     let searchValue;
-  
   
     if(!values){
       searchValue = 'yellow+flowers'
